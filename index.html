@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A meal planner app to help users plan meals, track ingredients, and find nearby restaurants.">
+    <meta name="author" content="Your Name">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Meal Planner</h1>
+        <p>Plan meals, track ingredients, and discover nearby options!</p>
+    </header>
+
+    <main>
+        <section class="meal-planner">
+            <h2>Generate Your Meal Plan</h2>
+            <label for="diet-select">Choose your diet:</label>
+            <select id="diet-select">
+                <option value="vegan">Vegan</option>
+                <option value="keto">Keto</option>
+                <option value="gluten-free">Gluten-free</option>
+            </select>
+            <div class="meal-plan-list"></div>
+        </section>
+
+        <section class="ingredient-tracker">
+            <h2>Track Ingredients You Have</h2>
+            <input type="text" id="ingredient-input" placeholder="Enter ingredients">
+            <button id="ingredient-button">Find Recipes</button>
+            <div class="recipe-list"></div>
+        </section>
+
+        <section class="geolocation">
+            <h2>Nearby Meal Options</h2>
+            <button id="geolocation-btn">Find Nearby Meals</button>
+            <div class="restaurant-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meal Planner. All rights reserved.</p>
+    </footer>
+    <script src="Js/script.js"></script>
+
+</body>
+</html>
